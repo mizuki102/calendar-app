@@ -1,0 +1,42 @@
+<!DOCTYPE html><html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="card">
+            <h3>2026年3月</h3>
+            <div class="calendar-grid">
+                <div class="weekday">日</div>
+                <div class="weekday">月</div>
+                <div class="weekday">火</div>
+                <div class="weekday">水</div>
+                <div class="weekday">木</div>
+                <div class="weekday">金</div>
+                <div class="weekday">土</div>
+                
+                <div id="calendar-body"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1>2026年</h1>
+            <h2>3月31日</h2>
+            <div class="input-container">
+                <label>時給</label>
+                <input type="number" id="hourly-rate" placeholder="半角数字で入力">
+            </div>
+            <div class="input-container">
+                <label>勤務時間</label>
+                <input type="number" id="working-hours" placeholder="時間を入力">
+            </div>
+            <button id="calc-btn">計算する</button>
+            <div>今日の給料：<span id="result-price">0円</span></div>
+        </div>
+
+        <div class="history-card">
+            <h3>計算履歴</h3>
+            <ul id="history-list"></ul>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
