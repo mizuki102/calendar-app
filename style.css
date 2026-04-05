@@ -1,0 +1,68 @@
+h1, h2{
+    color: black;
+}
+
+input, button {
+    margin: 10px;
+    padding: 5px;
+}
+
+div {
+    margin-top: 20px;
+    font-weight: bold; 
+    color: red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.history-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weekday {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.day-box {
+    border: 1px solid #eee;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+#calendar-body {
+    display: contents;
+}
